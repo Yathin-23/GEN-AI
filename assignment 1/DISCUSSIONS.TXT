@@ -1,0 +1,27 @@
+1. Why is discount=0 safe but cart=[] dangerous?
+
+   discount=0 is safe because integers are immutable.
+   cart=[] is dangerous because the same list object is shared
+   across multiple function calls.
+
+2. Difference between rebinding and mutating?
+
+   Rebinding
+   x = [1,2]
+   x = [3,4]
+
+   Mutating
+   x = [1,2]
+   x.append(3)
+
+3. Mutable and Immutable
+
+   Mutable:
+   list,dict,set
+
+   Immutable:
+   tuple,str,int
+
+4. When a list is passed to a function and modified,
+   changes are reflected outside because the function
+   receives a reference to the same list object.
